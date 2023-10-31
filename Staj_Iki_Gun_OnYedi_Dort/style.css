@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #217dbb;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.kategori-kutucuklar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.kutucuk {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.kutucuk:hover {
+    transform: translateY(-5px);
+}
+
+.kutucuk h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.kutucuk a img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sosyal-medya {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sosyal-medya a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.sosyal-medya a img {
+    max-width: 100%;
+    height: auto;
+}

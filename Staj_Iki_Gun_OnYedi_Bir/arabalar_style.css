@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.urun-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.urun {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.urun img {
+    max-width: 100%;
+}
+
+.urun h3 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.urun p {
+    color: #777;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.urun button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.urun button:hover {
+    background-color: #ff4500;
+}
+
+.sonuc-mesaji {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}

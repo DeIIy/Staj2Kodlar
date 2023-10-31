@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#baslik {
+    color: blue;
+}
+
+#metin {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#degistirButton {
+    background-color: lightblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}

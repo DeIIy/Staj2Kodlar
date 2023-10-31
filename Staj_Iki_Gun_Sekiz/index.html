@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme Sayfası</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo">
+            <p class="ssl-uyarisi">Bu sitede SSL Sertifikası vardır.</p>
+        </header>
+        <main>
+            <div class="odeme-kutusu">
+                <h2>Ödeme Bilgileri</h2>
+                <form id="odemeForm">
+                    <div class="form-grup">
+                        <label for="kartSahibiAdi">Kart Sahibinin Adı</label>
+                        <input type="text" id="kartSahibiAdi" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="kartNumarasi">Kredi Kartı Numarası</label>
+                        <input type="text" id="kartNumarasi" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="sonKullanmaTarihi">Son Kullanma Tarihi</label>
+                        <input type="text" id="sonKullanmaTarihi" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="guvenlikKodu">Güvenlik Kodu (CVV/CVC)</label>
+                        <input type="text" id="guvenlikKodu" required>
+                    </div>
+                    <div class="form-grup">
+                        <label for="taksitSecenekleri">Taksit Seçenekleri</label>
+                        <select id="taksitSecenekleri">
+                            <option value="yok">yok</option>
+                            <option value="Taksitsiz">Taksitsiz</option>
+                            <option value="6">6 Ay</option>
+                            <option value="12">12 Ay</option>
+                            <option value="24">24 Ay</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="onayButonu">Ödemeyi Onayla</button>
+                </form>
+                <p class="hataMesaji" id="hataMesaji"></p>
+                <p class="onayMesaji" id="onayMesaji"></p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

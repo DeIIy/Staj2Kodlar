@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Listesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Filtreler</h2>
+            <select id="categoryFilter">
+                <option value="">Tüm Kategoriler</option>
+                <option value="Buzdolabı">Buzdolabı</option>
+                <option value="Fırın">Fırın</option>
+                <option value="Bulaşık Makinesi">Bulaşık Makinesi</option>
+                <option value="Çamaşır Makinesi">Çamaşır Makinesi</option>
+                <option value="Ocak">Ocak</option>
+            </select>
+            <label>Fiyat Aralığı:</label>
+            <input type="checkbox" id="price1000-2000" value="1000-2000">1000-2000
+            <input type="checkbox" id="price2000-3000" value="2000-3000">2000-3000
+            <input type="checkbox" id="price3000-4000" value="3000-4000">3000-4000
+            <input type="checkbox" id="price4000-5000" value="4000-5000">4000-5000
+            <label>Değerlendirme Puanı:</label>
+            <input type="checkbox" id="rating1" value="1">1 Yıldız
+            <input type="checkbox" id="rating2" value="2">2 Yıldız
+            <input type="checkbox" id="rating3" value="3">3 Yıldız
+            <input type="checkbox" id="rating4" value="4">4 Yıldız
+            <input type="checkbox" id="rating5" value="5">5 Yıldız
+            <button id="applyFilters">Filtreleri Uygula</button>
+            <button id="resetFilters">Filtreleri Sıfırla</button>
+        </div>
+        <div class="product-list">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

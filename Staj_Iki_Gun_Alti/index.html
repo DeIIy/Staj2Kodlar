@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anasayfa</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-item disabled"><a href="#" class="homePage" >Anasayfa</a></li>
+                <li><a href="urun_bilgi.html">Ürün Hakkında</a></li>
+                <li><a href="satici_bilgileri.html">Satıcı Bilgileri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="slider">
+            <img src="Mutfak_Dolabi_1.JPG" alt="Resim 1">
+            <img src="Mutfak_Dolabi_2.JPG" alt="Resim 2">
+            <img src="Mutfak_Dolabi_3.JPG" alt="Resim 3">
+            <img src="Mutfak_Dolabi_4.JPG" alt="Resim 4">
+            <img src="Mutfak_Dolabi_5.JPG" alt="Resim 5">
+        </div>
+
+        <div class="comments">
+            <div class="comment">
+                <h2>Yusuf</h2>
+                <h3>★★★★★</h3>
+                <p>Efsane</p>
+            </div>
+            <div class="comment">
+                <h2>Ali</h2>
+                <h3>★★★</h3>
+                <p>Güzel</p>
+            </div>
+            <div class="comment">
+                <h2>Ayşe</h2>
+                <h3>★★★★★</h3>
+                <p>Harika!</p>
+            </div>
+            <div class="comment">
+                <h2>Mehmet</h2>
+                <h3>★★★★</h3>
+                <p>Teşekkürler</p>
+            </div>
+            <div class="comment">
+                <h2>Zeynep</h2>
+                <h3>★★★</h3>
+                <p>İyi</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>Yorum Yaz</h2>
+            <form action="#" method="POST">
+                <label for="adSoyad">Ad Soyad:</label>
+                <input type="text" id="adSoyad" name="adSoyad" required><br>
+
+                <label for="email">E-Posta:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label>Değerlendirme:</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★★★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★★★★</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★★★★★</label><br>
+
+                <label for="yorum">Yorumunuz:</label><br>
+                <textarea id="yorum" name="yorum" rows="4" required></textarea><br>
+
+                <input type="submit" value="Gönder">
+            </form>
+            <p class="form-message"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Kendi Tanıtımım</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .resmim {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-section {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #00e1ff;
+        }
+
+        h2 {
+            color: #00e1ff;
+        }
+
+        p {
+            color: black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid beige;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"], form input[type="radio"], form input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="resmim">
+        <img src="Resmim_360x360.jpg" alt="Resmim">
+    </div>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Yusuf Tunahan ETLİK</h1>
+            <h2>Konya Teknik Üniversitesi 4. Sınıf Bilgisayar Mühendisliği</h2>
+        </div>
+
+        <div class="content-section">
+            <p>21 yaşındaki bilgisayar mühendisliği öğrencisi olan bu genç, hayatını dengelemek ve geleceğe hazırlanmak için yoğun bir çaba sarf ediyor. Şu an staj yaparken yaz tatilinde okulunun kapalı olması, ona daha fazla zaman kazandırıyor ve bu süreyi en verimli şekilde değerlendirmeye çalışıyor.</p>
+
+            <p>Bilgisayar mühendisliği alanında daha fazla deneyim kazanmak amacıyla çeşitli projeler üretiyor ve bu projeleri kişisel portfolyosuna eklemek için çalışıyor. Aynı zamanda, alanındaki güncel gelişmeleri takip ederek kendini sürekli olarak geliştiriyor. Online kurslar ve eğitim materyalleri aracılığıyla yeni teknolojilere ve programlama dillerine hakim olma fırsatı buluyor.</p>
+
+            <p>Finansal bilinci artırmak için bütçe oluşturma ve tasarruf yapma alışkanlıkları geliştiriyor. Gelecekteki kariyerini ve finansal hedeflerini planlayarak, mühendislik alanında başarılı bir kariyere sahip olma yolunda ilerliyor.</p>
+
+            <p>Sonuç olarak, bu genç bilgisayar mühendisi adayı, hem akademik başarılarını hem de kişisel gelişimini bir arada sürdürmek için azimli ve kararlı bir şekilde çalışıyor. Gelecekteki hedeflerine ulaşmak için gerekli adımları atmaya devam ediyor ve kendini sürekli olarak yenileyerek başarıya doğru ilerliyor.</p>
+        </div>
+
+        <div class="content-section">
+            <table>
+                <tr>
+                    <td>C</td>
+                    <td>Java</td>
+                    <td>Python</td>
+                    <td>Arduino</td>
+                    <td>Flutter</td>
+                </tr>
+                <tr>
+                    <td>İyi</td>
+                    <td>Çok İyi</td>
+                    <td>Normal</td>
+                    <td>İyi</td>
+                    <td>Çok İyi</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <form>
+                <label for="adSoyad">Ad Soyad:</label>
+                <input type="text" id="adSoyad" name="adSoyad" required><br><br>
+
+                <label>Cinsiyet:</label>
+                <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+                <label for="erkek">Erkek</label>
+                <input type="radio" id="kiz" name="cinsiyet" value="Kız">
+                <label for="kiz">Kız</label><br><br>
+
+                <label>Hobileriniz:</label><br>
+                <input type="checkbox" id="futbol" name="hobi" value="Futbol">
+                <label for="futbol">Futbol</label><br>
+                <input type="checkbox" id="basketbol" name="hobi" value="Basketbol">
+                <label for="basketbol">Basketbol</label><br>
+                <input type="checkbox" id="voleybol" name="hobi" value="Voleybol">
+                <label for="voleybol">Voleybol</label><br><br>
+
+                <input type="submit" value="Gönder">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
